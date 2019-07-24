@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This page provides information on Knapheide Continuous Improvement">
+		 <link rel="stylesheet" href="style.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />     
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" />     
+<Script src="https://code.jquery.com/jquery-1.12.3.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js" type="text/javascript"></Script>     
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" type="text/javascript"></Script>
+
+<title>Knapheide CI Information</title>
+</head>
+<body>
+
+<h1 align="center" style="font-family:Impact;"> KNAPHEIDE CI BULLETIN BOARD</h1>
+<h4 align="center"style="font-family:Arial;"> C - Customer &nbsp C - Collaboration &nbsp C - Continuous Improvement</h4>
+
+ <img src="images/knaplogowhite.png"  alt="Knapheide Logo" style="position:absolute;TOP:5px; LEFT:15px;width:250px;height:150px;">
+ <img src="images/Never_Settle.jpg" class="image-square" alt="Never Settle" style="position:absolute;TOP:25px; LEFT:1650px;width:225px;height:80px;">
+ <marquee behavior ="scroll" direction="left"><font size="2" face="Verdana"><b><i>The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one</i></b></font></marquee>
+ <br>
+
+ <div class="topnav">
+ 	<a href="Main.htm">Home</a>
+ 	<!<a href="documents/Gemba Calendar 2018.pdf" target="_blank">
+ 	<a href="peak awards.htm">Peak Awards List</a>
+ 	<a href="documents/OrgChart.pdf" target="_blank">Organization Chart</a>
+ 	<a href="Weekly Calendar.htm" target="_blank">CI Activiy Calendar</a>
+ 	<div class="dropdown">
+    	<button class="dropdown-btn">Belt Requirements 
+    	<i class="fa fa-caret-down"></i>
+        </button>
+  		<div class="dropdown-content">
+  			<a href="documents/GB Requirements.pdf" target="_blank">GB Requirements</a>
+    		<a href="documents/BB Requirements.pdf" target="_blank">BB Requirements</a>
+    	</div>
+  	</div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<hr>
+
+<div class="whole">
+<div class="row">
+<div class="column">
+
+<a href="SunilUpdate.html" style="color:gray">
+<div class="boxEmployee" >
+<h2>Sunil Rajagopal <img src = "images/sunil.jpg" class="image-round" align="middle" width="40" height="50" />  <img src = "images/bbelt.png" align="middle" width="30" height="20"/></h2>
+  <ul> 
+  <li>Info goes here</li>
+  </ul>
+</div>
+</a>
+
+<a href="DavidUpdate.html" style="color:gray">
+<div class="boxEmployee" >
+<h2>David Babcock <img src = "images/david.jpg" class="image-round" align="middle" width="40" height="50" />  <img src = "images/bbelt.png" align="middle" width="30" height="20"/></h2>
+  <ul> 
+  <li>618 shop delay improvement </li>
+  <li>KDOT-Knapheide on time delivery improvement</li>
+  </ul>
+</div>
+</a>
+
+<a href="ChristyUpdate.html" style="color:gray">
+<div class="boxEmployee">
+<h2>Christy Frankel <img src = "images/christy.jpg" class="image-round" align="middle" width="40" height="50" /><img src = "images/bbelt.png" align="middle" width="30" height="20"/></h2>
+  <ul>
+  <li>ARI - On time delivery improvement</li>
+  <li>Improve order accuracy</li>
+  </ul>
+</div>
+</a>
+
+<a href="FredUpdate.html" style="color:gray">
+<div class="boxEmployee">
+<h2>Fred Rose <img src = "images/Fred.jpg" class="image-round" align="middle" width="40" height="50"/> </h2>
+  <ul>
+  <li>Info goes here</li>
+  </ul>
+</div>
+</a>
+
+<a href="MichaelUpdate.html" style="color:gray">
+<div class="boxEmployee">
+<h2>Michael Zehnle <img src = "images/Michael.jpg" class="image-round" align="middle" width="40" height="50"/> </h2>
+  <ul>
+  <li>Info goes here</li>
+  </ul>
+</div>
+</a>
+
+<a href="JamieUpdate.html" style="color:gray">
+<div class="boxEmployee">
+<h2>Jamie Howell <img src = "images/jamie.jpg" class="image-round" align="middle" width="40" height="50"/></h2>
+  <ul>
+  <li>Improvements in 636 - working on tools and tool boxes on lines </li>
+  </ul>
+</div>
+</a>
+<br>
+</div>
+
+<div class="column">
+
+<div class="box">
+<h2>Six Sigma Green and Black Belt Certification</h2>
+<div style="overflow-x:auto;">
+  <table id="example" class="display" cellspacing="0" width="100%">
+  <thead>
+	
+      <th>Name</th>
+      <th>Project</th>
+	  <th align="center">Date Completed</th>
+	  <th align="center">Certified</th>
+	  
+	  </thead>
+	  <tbody>
+	 <tr>
+	 <td>Dan Bradfield</td>
+	 <td>E-Store Rebuild and Advancement</td>
+	 <td align="center">11/9/2018</td>
+	 <td align="center">NA</td>
+	  </tr>
+	   <tr>
+	 <td>Stephanie Ragar</td>
+	  <td>Fleet RFQ and Order Flow Process Improvement</td>
+	 <td align="center">NA</td>
+	 <td align="center">NA</td>
+	  </tr>
+	   <tr>
+	 <td>Mike Francis</td>
+	  <td>Returnable Rack Process Improvement</td>
+	 <td align="center">NA</td>
+	 <td align="center">NA</td>
+	  </tr>
+	   <tr>
+	 <td>Seth Rhoads</td>
+	  <td>Transition from Paper to Digital</td>
+	 <td align="center">NA</td>
+	 <td align="center">NA</td>
+	  <tr>
+	 <td>Michael Zehnle</td>
+	  <td>Restocking Fee Process Improvement</td>
+	 <td align="center">NA</td>
+	 <td align="center">NA</td>
+	  </tr>
+	   <tr>
+	 <td>Christy Frankel</td>
+	  <td>Amazon Project</td>
+	 <td align="center">3/20/2019</td>
+	 <td align="center">YES</td>
+	  </tr>
+	  <tr></tr>
+	 <td>David Babcock</td>
+	  <td>UB Reshuffle for 36K</td>
+	 <td align="center">3/20/2019</td>
+	 <td align="center">YES</td>
+	  </tr>
+	  </tbody>
+	</table>  
+	</div>
+</div>
+	  
+<div class="box">	  
+<h2>Pe@k Awards-2019</h2>
+<P> 155 Pe@k nominations in 2018 <br>55 Pe@k nominations YTD</P>
+</div>
+
+<div class="box">
+<h2>Gemba Activity</h2>
+<p>Gemba walk activated in shop. 607, 617 an 618 Gemba in progress. Reviewed metrics for Fleet. Soon to be activated.</p>
+</div>
+
+<div class="box">
+<h2>CI-Quality Executive Update</h2>
+<P > Knapheide On Time Delivery-KDOT project kickoff <b>May 17, 2019 </b>, Conference room 1-08 at 11:00AM</P>
+</div>
+
+<div class="box">
+<h2 >News</h2>
+</div>
+</div>
+
+<div class="column">
+<div class="box">
+<h2>CI Tools</h2>
+<ul>
+<li><a href="documents/Process Map.pdf" target="_blank">Process Map</a></li>
+<li>Standard Work</li>
+<li>Time Study</li>
+<li>Work Flow</li>
+<li>Kanban</li>
+<li>Project Management</li>
+<li>TPI</li>
+</ul>
+</div>
+
+<div class="box">
+<h2>CI Template Downloads</h2>
+<ul>
+<li><a  href= "documents/kaizen project charter template.xlsx" >Kaizen Charter</a></li>
+<li><a href="documents/Time Study Sheet Manual Entry.xlsm" >Time Study</a></li>
+</ul>
+</div>
+
+<div class="box">
+<h2>CI Activity Plan and Quarterly Report Out</h2>
+<ul>
+<li><a href= "file://j:/quality/Ci activities/CI-SC-OPS activities RoadTo36KandBeyond.htm"target="_blank">Road to 36K and beyond </a></li>
+</ul>
+<ul>
+<li><a href= "..\CI project planning/CI Activities 2018-2019.htm" target="_blank">CI Activity Plan 2018-2019</a></li>
+<ul>
+<li><a href= "objectives list.htm" target="_blank">KTEC CI Activity Plan 2018-2019</a></li>
+</ul>
+</ul>
+<ul>
+<li><a href= "documents/CI activity update-2018-Q2.pdf" target="_blank">CI Activity Update-2018 Q2</a></li>
+<li><a href="documents/CI activity update-2018-Q3.pdf" target="_blank">CI Activity Update-2018 Q3</a></li>
+<li><a href="documents/CI activity update-2018-Q4.pdf" target="_blank">CI Activity Update-2018 Q4</a></li><br>
+<li><a href="documents/CI activity update-2019-Jan.pdf" target="_blank">CI Activity Update-2019 Jan</a></li>
+</ul>
+</div>
+
+<span class="tooltip"><img src="images/CI logo.png" alt="CI Logo" class="imageSpin">
+  <span class="tooltiptext"><font color="white">K</font>&nbsp&nbsp <font color="black">share </font><font color="white">K</font><font color="#CDCFD0">nowledge</font><br>
+  <font color="white">N</font>&nbsp&nbsp<font color="white"> N</font><font color="#CDCFD0">ewfangled</font><font color="black""> culture</font><br>
+  <font color="white">A</font>&nbsp&nbsp<font color="black""> positive</font><font color="white"> A</font><font color="#CDCFD0">ttitude</font><br>
+  <font color="white">P</font>&nbsp&nbsp<font color="white"> P</font><font color="#CDCFD0">ride</font><font color="black""> in work</font><br>
+  <font color="white">H</font>&nbsp&nbsp <font color="black"">create</font> <font color="white">H</font><font color="#CDCFD0">armony</font><br>
+  <font color="white">E</font>&nbsp&nbsp<font color="black""> commited to</font><font color="white"> E</font><font color="#CDCFD0">xcellence</font><br>
+  <font color="white">I</font>&nbsp&nbsp&nbsp<font color="black""> continuously</font><font color="white"> I</font><font color="#CDCFD0">mprove</font><br>
+  <font color="white">D</font>&nbsp&nbsp<font color="black""> instill </font><font color="white">D</font><font color="#CDCFD0">etermination</font><br>
+  <font color="white">E</font>&nbsp&nbsp<font color="black""> create</font><font color="white"> E</font><font color="#CDCFD0">nthusiasm</font/></span>
+</span>
+</div>
+</div>
+</div>
+</body>
+</html>

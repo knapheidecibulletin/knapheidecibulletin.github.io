@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This page provides information on Knapheide Continuous Improvement">
+		 <link rel="stylesheet" href="StylePeak.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />     
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" />     
+<Script src="https://code.jquery.com/jquery-1.12.3.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js" type="text/javascript"></Script>     
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" type="text/javascript"></Script>
+
+<script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('example').DataTable({                    
+                    dom: 'Blfrtip',
+                  buttons: [{
+                       text: 'Export To Excel',                       
+                        extend: 'excelHtml5',
+                        exportOptions: {
+                            modifier: {
+                               selected: true
+                            },
+                            columns: [0, 1, 2, 3],
+                            format: {
+                                header: function (data, columnIdx) {
+                                    return data;
+                                },
+                                body: function (data, column, row) {
+                                    // Strip $ from salary column to make it numeric
+                                   debugger;
+                                   
+                                }
+                            }
+                        },
+                        footer: false,
+                        customize: function (xlsx) {
+                           var sheet = xlsx.xl.worksheets['sheet1.xml'];
+                            //$('c[r=A1] t', sheet).text( 'Custom text' );
+                            //$('row c[r^="C"]', sheet).attr('s', '2');
+                        }
+                   }]
+                });
+            });
+        });
+    </script>
+	
+	<title>Knapheide CI Information</title>
+</head>
+<body>
+
+<h1 align="center" style="font-family:Impact;"> KNAPHEIDE CI BULLETIN BOARD</h1>
+<h4 align="center"style="font-family:Arial;"> C - Customer &nbsp C - Collaboration &nbsp C - Continuous Improvement</h4>
+
+ <img src="images/knaplogowhite.png"  alt="Knapheide Logo" style="position:absolute;TOP:5px; LEFT:15px;width:250px;height:150px;">
+ <img src="images/Never_Settle.jpg" class="image-square" alt="Never Settle" style="position:absolute;TOP:25px; LEFT:1650px;width:225px;height:80px;">
+ <marquee behavior ="scroll" direction="left"><font size="2" face="Verdana"><b><i>A good objective of leadership is to help those who are doing poorly to do well and to help those who are doing well to do even better.</i></b></font></marquee>
+ <br>
+
+ <div class="topnav">
+ 	<a href="Main.htm">Home</a>
+ 	<!<a href="documents/Gemba Calendar 2018.pdf" target="_blank">
+ 	<a href="peak awards.htm">Peak Awards List</a>
+ 	<a href="documents/OrgChart.pdf" target="_blank">Organization Chart</a>
+ 	<a href="Weekly Calendar.htm" target="_blank">CI Activiy Calendar</a>
+ 	<div class="dropdown">
+    	<button class="dropdown-btn">Belt Requirements 
+    	<i class="fa fa-caret-down"></i>
+        </button>
+  		<div class="dropdown-content">
+  			<a href="documents/GB Requirements.pdf" target="_blank">GB Requirements</a>
+    		<a href="documents/BB Requirements.pdf" target="_blank">BB Requirements</a>
+    	</div>
+  	</div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<hr>
+
+<div class="whole">
+<div class="row">
+<div class="column">
+
+
+<iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQ6i-cslTKxWMwOeB3AxdVfLB8DvUP1kkzeQFPZ2aHoESgTmGrE1Px9wcXMlJ9PE0ZlhB6y5rkKhdKN/pubhtml?widget=true&amp;headers=false"></iframe>
+
+</div>
+</div>
+</div>
+
+</body>
+</html>

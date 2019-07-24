@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="This page provides information on Knapheide Continuous Improvement">
+		 <link rel="stylesheet" href="styleUpdate.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />     
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		 <link rel="stylesheet" href="https://cdn.datatables.net/buttons/1.2.1/css/buttons.dataTables.min.css" />     
+<Script src="https://code.jquery.com/jquery-1.12.3.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/dataTables.buttons.min.js" type="text/javascript"></Script>     
+<Script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js" type="text/javascript"></Script>     
+<Script src="https://cdn.datatables.net/buttons/1.2.1/js/buttons.html5.min.js" type="text/javascript"></Script>
+
+<script>
+        $(document).ready(function () {
+            $(document).ready(function () {
+                $('example').DataTable({                    
+                    dom: 'Blfrtip',
+                  buttons: [{
+                       text: 'Export To Excel',                       
+                        extend: 'excelHtml5',
+                        exportOptions: {
+                            modifier: {
+                               selected: true
+                            },
+                            columns: [0, 1, 2, 3],
+                            format: {
+                                header: function (data, columnIdx) {
+                                    return data;
+                                },
+                                body: function (data, column, row) {
+                                    // Strip $ from salary column to make it numeric
+                                   debugger;
+                                   
+                                }
+                            }
+                        },
+                        footer: false,
+                        customize: function (xlsx) {
+                           var sheet = xlsx.xl.worksheets['sheet1.xml'];
+                            //$('c[r=A1] t', sheet).text( 'Custom text' );
+                            //$('row c[r^="C"]', sheet).attr('s', '2');
+                        }
+                   }]
+                });
+            });
+        });
+    </script>
+	
+		<title>Knapheide CI Information</title>
+	</head>
+<body >
+
+<h1 align="center" style="font-family:Impact;"> KNAPHEIDE CI BULLETIN BOARD</h1>
+<h4 align="center"style="font-family:Arial;"> C - Customer &nbsp C - Collaboration &nbsp C - Continuous Improvement</h4>
+
+ <img src="images/knaplogowhite.png"  alt="Knapheide Logo" style="position:absolute;TOP:5px; LEFT:15px;width:250px;height:150px;">
+ <img src="images/Never_Settle.jpg" class="image-square" alt="Never Settle" style="position:absolute;TOP:25px; LEFT:1650px;width:225px;height:80px;">
+  <marquee behavior ="scroll" direction="left"><font size="2" face="Verdana"><b><i>The secret of getting ahead is getting started. The secret of getting started is breaking your complex overwhelming tasks into small manageable tasks, and then starting on the first one</i></b></font></marquee>
+ <br>
+
+ <div class="topnav">
+  <a href="Main.htm">Home</a>
+  <!<a href="documents/Gemba Calendar 2018.pdf" target="_blank">
+  <a href="peak awards.htm">Peak Awards List</a>
+  <a href="documents/OrgChart.pdf" target="_blank">Organization Chart</a>
+  <a href="Weekly Calendar.htm" target="_blank">CI Activiy Calendar</a>
+  <div class="dropdown">
+      <button class="dropdown-btn">Belt Requirements 
+    	<i class="fa fa-caret-down"></i>
+      </button>
+  	<div class="dropdown-content">
+  		<a href="documents/GB Requirements.pdf" target="_blank">GB Requirements</a>
+    	<a href="documents/BB Requirements.pdf" target="_blank">BB Requirements</a>
+    </div>
+  </div>
+</div>
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
+<hr>
+
+<div class="whole">
+<div class="row">
+<div class="column">
+
+<a href=""https://docs.google.com/spreadsheets/d/e/2PACX-1vSm4UUrRTM_xLtqFstA0ScKnf6JSj_FeCn934al3ycB3lvUnxXIrLhyVseCz71HXhPi04X1jIALfLCR/pubhtml?widget=true&amp;headers=false" target="sheet2" style="color:gray">
+<div class="boxEmployee" >
+<h2>Objectives</h2>
+  <ul > 
+  <li>Objectives information goes here.</li>
+  </ul>
+</div>
+</a>
+
+<a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vSwvbh8pIt1BPqbOcGk7tKpdKb8mJLNENVNI7Q6QN-eVQU5FE4tuEYrY5Ntr_AcOiHg5vFZuDzx7AfU/pubhtml?widget=true&amp;headers=false" target="sheet2" style="color:gray">
+<div class="boxEmployee">
+<h2>Weekly Report</h2>
+  <ul>
+  <li>Weekly Report information goes here.</li>
+  </ul>
+</div>
+</a>
+
+<a href="ChristyGemba.html" target="sheet2" style="color:gray">
+<div class="boxEmployee">
+<h2>Gemba</h2>
+  <ul>
+  <li>Gemba information goes here.</li>
+  </ul>
+</div>
+</a>
+
+<a href="ChristyCertification.html" target="sheet2" style="color:gray">
+<div class="boxEmployee">
+<h2>Certification</h2>
+  <ul>
+  <li>Certification information goes here.</li>
+  </ul>
+</div>
+</a>
+
+<a href="ChristyOther.html" target="sheet2" style="color:gray">
+<div class="boxEmployee">
+<h2>Other</h2>
+  <ul>
+  <li>Other relevant information goes here. </li>
+  </ul>
+</div>
+</a>
+<br>
+<span class="tooltip"><img src="images/CI logo.png" alt="CI Logo" class="imageSpin">
+  <span class="tooltiptext"><font color="white">K</font>&nbsp&nbsp <font color="black">share </font><font color="white">K</font><font color="#CDCFD0">nowledge</font><br>
+  <font color="white">N</font>&nbsp&nbsp<font color="white"> N</font><font color="#CDCFD0">ewfangled</font><font color="black""> culture</font><br>
+  <font color="white">A</font>&nbsp&nbsp<font color="black""> positive</font><font color="white"> A</font><font color="#CDCFD0">ttitude</font><br>
+  <font color="white">P</font>&nbsp&nbsp<font color="white"> P</font><font color="#CDCFD0">ride</font><font color="black""> in work</font><br>
+  <font color="white">H</font>&nbsp&nbsp <font color="black"">create</font> <font color="white">H</font><font color="#CDCFD0">armony</font><br>
+  <font color="white">E</font>&nbsp&nbsp<font color="black""> commited to</font><font color="white"> E</font><font color="#CDCFD0">xcellence</font><br>
+  <font color="white">I</font>&nbsp&nbsp&nbsp<font color="black""> continuously</font><font color="white"> I</font><font color="#CDCFD0">mprove</font><br>
+  <font color="white">D</font>&nbsp&nbsp<font color="black""> instill </font><font color="white">D</font><font color="#CDCFD0">etermination</font><br>
+  <font color="white">E</font>&nbsp&nbsp<font color="black""> create</font><font color="white"> E</font><font color="#CDCFD0">nthusiasm</font/></span>
+</span>
+</div>
+
+<div class="columnEmbed">
+		<iframe name="sheet2" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSm4UUrRTM_xLtqFstA0ScKnf6JSj_FeCn934al3ycB3lvUnxXIrLhyVseCz71HXhPi04X1jIALfLCR/pubhtml?widget=true&amp;headers=false"></iframe>
+		<script>
+		$(document).keydown(function(e){
+    		if(e.which === 123){
+       		return false;
+    		}
+		});
+		</script>
+		<script>
+		$(document).bind("contextmenu",function(e) {
+ 		e.preventDefault();
+		});
+		</script>
+</div>
+
+</div>
+</div>
+</body>
+</html>
