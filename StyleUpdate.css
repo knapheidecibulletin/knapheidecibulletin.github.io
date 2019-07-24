@@ -88,7 +88,7 @@ a {
 
 .column {
     float: left;
-    background-image: url("images/knapheide_black_background.png");
+    background-image: url("Images/Knapheide_Black_Background.png");
     background-color: black;
     width:33%;
     padding: 30px;
@@ -102,7 +102,7 @@ a {
 .columnEmbed {
     float: left;
     position: relative;
-    background-image: url("images/knapheide_black_background.png");
+    background-image: url("Images/Knapheide_Black_Background.png");
     background-color: black;
     width: 66%;
     padding: 30px 10px 30px 40px;
