@@ -26,12 +26,12 @@ h1 {
     margin: 0px 0px 0px 0px; 
     padding: 0px 0px 0px 0px;
     padding-top: 20px;
-    z-index:1;
+    z-index: 1;
 }
 
 h2 {
     color: black;
-    font-family:Arial;
+    font-family: Arial;
     font-size:20px;
     margin: 0px 0px 0px 0px; 
     padding: 0px 0px 0px 0px;
@@ -44,8 +44,8 @@ h3 {
 }
 h4 {
     color: black;
-    font-family:verdana;
-    font-size:20px;
+    font-family: Arial;
+    font-size: 20px;
 }
 
 p {
@@ -95,7 +95,7 @@ a {
     background-image: url("Images/Knapheide_Black_Background.png");
     background-color: black;
     width: 100%;
-    padding: 30px 30px 30px 100px;
+    padding: 30px 50px 30px 50px;
     height: 800px;
     display: inline-block
     border-color: gray;
@@ -295,8 +295,8 @@ a .boxEmployee:hover {
 }
 
 iframe {
-    width: 1650px;
-    height: 720px;
+    width: 100%;
+    height: 100%;
 }
 
 /* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
