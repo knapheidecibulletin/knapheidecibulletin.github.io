@@ -105,7 +105,7 @@ a {
     background-image: url("Images/Knapheide_Black_Background.png");
     background-color: black;
     width: 66%;
-    padding: 30px 10px 30px 40px;
+    padding: 30px 30px 30px 40px;
     height: 800px;
     display: inline-block
     border-color: gray;
@@ -304,8 +304,8 @@ a .boxEmployee:hover {
 }
 
 iframe {
-    width: 1150px;
-    height: 750px; 
+    width: 100%;
+    height: 100%; 
 
 }
 
