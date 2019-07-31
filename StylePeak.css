@@ -6,17 +6,53 @@ body {
     background-blend-mode: overlay;
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
-}
-
 .image-round {
     border-radius: 50%;
 }
- 
-.image-square {
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.img-container1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.txt-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img-container2 { 
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-header {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.image-header2 {
     border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 
 h1 {
