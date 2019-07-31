@@ -1,5 +1,4 @@
-body {
-    
+body { 
     background-color: #DD0330  ;
     background-repeat: no-repeat;
     background-position: 400px 75px; 
@@ -7,23 +6,63 @@ body {
     background-blend-mode: overlay;
 }
 
-.responsive {
-    width: 100%;
-    height: auto;
+header {
+    overflow: hidden;
 }
 
 .image-round {
     border-radius: 50%;
 }
- 
-.image-square {
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+}
+
+.img-container1 {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.txt-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.img-container2 { 
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.image-header {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.image-header2 {
     border-radius: 8px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 
 h1 {
     color: white;
     font-family: Alegreya SC;
-    font-size: 47px;
+    font-size: 45px;
     margin: 0px 0px 0px 0px; 
     padding: 0px 0px 0px 0px;
     padding-top: 20px;
@@ -43,9 +82,10 @@ h3 {
     color: black;
     font-family:Arial;
 }
+
 h4 {
     color: black;
-    font-family: verdana;
+    font-family: Arial;
     font-size: 20px;
 }
 
@@ -65,7 +105,6 @@ a {
     text-decoration: none;
     font-family: verdana;
 }
-
 
 .vl {
     border-right: 3px solid white;
@@ -93,7 +132,7 @@ a {
 
 .column {
     float: left;
-    background-image: url("Images/Knapheide_Black_Background.png");
+    background-image: url("images/knapheide_black_background.png");
     background-color: black;
     width: 100%;
     padding: 30px;
@@ -195,7 +234,7 @@ form {
 
 .box {
   border: 3px; 
-  background-image: url("Images/wood.jpg");
+  background-image: url("images/wood.jpg");
   border-style: inset; 
   border-radius: 25px;
   box-shadow: 0px 0px 10px 2px grey;
@@ -203,7 +242,7 @@ form {
 
 .boxEmployee {
   border: 3px; 
-  background-image: url("Images/wood.jpg");
+  background-image: url("images/wood.jpg");
   border-style: inset; 
   border-radius: 25px;
   box-shadow: 0px 0px 10px 2px grey;
@@ -255,7 +294,6 @@ a .boxEmployee:hover {
   cursor: pointer;
   outline: none;
 }
-
 
 .topnav a:hover, .dropdown-btn:hover, .dropdown-content a:hover {
   background-color: #f1f1f1;
@@ -333,7 +371,6 @@ a .boxEmployee:hover {
     top: 100%;
     left: 50%;
     margin-left: -10px;
-    
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -342,16 +379,16 @@ a .boxEmployee:hover {
 }
 
 @keyframes spin {
- from{
- transform: rotateY(0deg);
- moz-transform: rotateY(0deg); //Firefox
- ms-transform: rotateY(0deg); //Microsoft Browsers
- }
- to{
- transform: rotateY(360deg);
- moz-transform: rotateY(360deg); //Firefox
- ms-transform: rotateY(360deg); //Microsoft Browsers
- }
+ from {
+    transform: rotateY(0deg);
+    moz-transform: rotateY(0deg); //Firefox
+    ms-transform: rotateY(0deg); //Microsoft Browsers
+  }
+ to {
+    transform: rotateY(360deg);
+    moz-transform: rotateY(360deg); //Firefox
+    ms-transform: rotateY(360deg); //Microsoft Browsers
+  }
 }
 
 @-webkit-keyframes spin {
